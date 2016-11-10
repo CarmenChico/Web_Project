@@ -1,26 +1,25 @@
 import  $ from "jquery";
 
-// var API = "https://json-data.herokuapp.com/darts/info";
+var API = "https://json-data.herokuapp.com/darts/info"; // added the variable to link to make it cleaner to read
 
 var extractProduct_Info = requestProduct_Info();
 
 
-
-
 function requestProduct_Info() {
           return $.ajax ({
-                url: "https://json-data.herokuapp.com/darts/info"
+                url: `${API}`
                   });
     };
 // console.log(extractProduct_Info);
 
-// var getProduct_Data = $.ajax ({ url: `${API}`});
+//this fucntion details the information that is being pulled via ajax
 
 function extractProductInfo(productData) {
   // console.log(productData);
     var title = productData.data.product.title;
     // console.log(title);
     var desc = productData.data.product.description;
+      //I went head and added a variable name to the template, eventhough I would have simply done a return on it, but doing it this way, I added the append at the end of the function. Saved a step... but the otehr way will work as well.
       var infoHTML= `
               <div class="">
                   <h6>${title}</h6>
@@ -28,12 +27,14 @@ function extractProductInfo(productData) {
               </div>
               `;
               // console.log("HTML string", infoHTML);
-              $(".box3").append(infoHTML);
+              $(".box3").append(infoHTML); //add this information to the page
 }
 
-
+//we want to send the functions to the main.js so that everything gets linked together -- looked cleaner on the main.js file as well
 export { extractProduct_Info, extractProductInfo };
 
+
+//error was to try to use map on this, little did I realize that this particular one was not in
 // extractProductInfo.map(function(info) {
 //     var title = info.product.title;
 //     var desc = info.product.description;

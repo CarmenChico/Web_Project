@@ -1,27 +1,30 @@
 import  $ from "jquery";
 
-var API = "https://randomuser.me/api/";
-// 
-// function getProfile () {
-//   return $.ajax ({
-//     url: `${API}`,
-//     dataType: 'json',
-//     success: function(data) {
-//       console.log(data);
-//     }
-//   });
-// };
+var API = "https://randomuser.me/api/"
+
+function getProfile () {
+  return $.ajax ({
+    url: `${API}`
+  });
+};
 
 
 
-$.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function(data) {
-    console.log(data);
-  }
-});
+getProfile().then(userPic);
+getProfile().then(userPic);
+getProfile().then(userPic);
+
+function userPic (pic) {
+  console.log(pic);
+    pic.results.map(function(data){
+        console.log(data);
+        var pic= data.picture.large;
+        var picHTML = `
+          <img src="${pic}">
+           `;
+        $(".photo").append(picHTML);
+    })
+}
 
 
-    //  ?format=json
-export {    };
+    export { getProfile };
