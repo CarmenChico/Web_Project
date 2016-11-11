@@ -1,10 +1,11 @@
 import $ from "jquery";
 
 import { mapHTML } from "./map";
-import {  extractProduct_Info, extractProductInfo } from "./product_info";
-import {  } from "./testimonials";
-import { getProfile } from "./user_profile";
-import {  } from "./companies";
+import { extractProduct_Info, extractProductInfo } from "./product_info";
+import { testimonialInfo, requestTestimonials } from "./testimonials";
+import { getProfile, boyUserPic, girlUserPic } from "./user_profile";
+import { companyPIX, getCompanyInfo } from "./companies";
+import { getImgs } from "./flickr";
 
 /////////////////////////////////////
 ////////////////map/////////////////
@@ -21,9 +22,19 @@ extractProduct_Info.then(extractProductInfo);  //these hold the ajax request and
 
 
 /////////////////////////////////////
-//////////profile picturs///////////////
+//////////testimonials///////////////
 /////////////////////////////////////
 
- getProfile().then(function(response_data) {
-  // console.log(response_data) ;
- })
+
+requestTestimonials().then(testimonialInfo);
+
+//photos
+getProfile().then(girlUserPic);
+getProfile().then(girlUserPic);
+getProfile().then(boyUserPic);
+
+ /////////////////////////////////////
+ //////////Companies///////////////
+ /////////////////////////////////////
+
+ getCompanyInfo.then(companyPIX);

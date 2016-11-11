@@ -8,10 +8,7 @@ function requestTestimonials () {
   });
 };
 
-export {    };
 
-
-requestTestimonials().then(testimonialInfo);
 
 function testimonialInfo (data) {
     data.results.map(function(input){
@@ -19,14 +16,16 @@ function testimonialInfo (data) {
         var name= input.name;
         var review= input.review;
         var testimonialHTML = `
-          <div class="name">${name}</div>
-           <div class="review">${review}</div>
+            <div class="userDetail">
+              <div class="name">${name}</div>
+              <div class="review">${review}</div>
+            </div>
            `;
         $(".testimonials").append(testimonialHTML);
     })
 }
 
-
+export { testimonialInfo, requestTestimonials  };
 
 
 

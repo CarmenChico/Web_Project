@@ -29,9 +29,6 @@ var getCompanyInfo= $.ajax ({
                     url: `${API}`
                       });
 
-
-getCompanyInfo.then(companyPIX);
-
 // .then(function(data))
 
 // console.log(getCompanyInfo);
@@ -42,7 +39,7 @@ function companyPIX (data) {
     data.results.map(function(pic){
         // console.log(pic);
         var url =pic.image_url;
-        var picHTML = `<img src="${url}"/>`;
+        var picHTML = `<img class="compPix" src="${url}"/>`;
         $(".box6").append(picHTML);
     })
 }
@@ -52,4 +49,4 @@ function companyPIX (data) {
 // });
 
 
-export {    };
+export { companyPIX, getCompanyInfo   };
