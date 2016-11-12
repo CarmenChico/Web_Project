@@ -27,8 +27,11 @@ function imgTemplate(pic) {
   console.log(pic);
   // var picCarrusel = pic.sizes.size[3].source;
   //console.log(picCarrusel);
-  // var picHTML = `<img src="${picCarrusel}">`;
-  //console.log(picHTML);
+  var picHTML = `
+  
+  <img src="${picCarrusel}">
+  `;
+  console.log(picHTML);
     $(".smallpix").append(pic);
   // $(".smallpix").append(picHTML);
 };

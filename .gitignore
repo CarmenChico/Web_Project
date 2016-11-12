@@ -9,3 +9,4 @@ app/js/bundle.js
 app/js/bundle.js.map
 
 src/js/api_key.js
+src/js/api_keys.js

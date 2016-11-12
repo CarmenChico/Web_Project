@@ -1,25 +1,34 @@
-@mixin compSize ($size){
-    // color:white;
+@import url(http://weloveiconfonts.com/api/?family=brandico|fontawesome|zocial);
+
+@mixin sqrSize ($size){
     height: $size;
     width: $size;
-    // background-color:black;
-    // border:none;
-    // border-radius: 4px;
 }
 h1  {
   text-align: center;
 }
+img {
+  max-width: 100%;
+}
 * {
   margin: 0;
   box-sizing:border-box;
+  list-style: none;
+
 }
 body {
+  font-family: "Adobe Calson Pro", Georgia, Serif;
+  font-size: 62.5%;
+  // background-color: green;
   // height: 100%;
   // width: 100%;
-
+  background-image: url("http://htc-wallpaper.com/wp-content/uploads/2014/07/Foggy-Grass-Field-Path.jpg?982602");
+  background-size: cover;
 }
-.container {
 
+.container {
+  background: rgba(251, 251, 251, 0.6);
+  margin: 3% 5%;
 }
 
 header {
@@ -45,52 +54,89 @@ header {
   justify-content: center;
   height: 600px;
   // border: 1px solid darkgreen;
-  background-color: rgba(255, 182, 193, 0.09);
-    .box2 {
-      height:530px;
-      width: 625px;
-      border: 1px solid green;
-        .largerPix {
-          height:475px;
-          width:625px;
-          border: 1px solid yellow;
-          //background-color:red;
-            img {
-              height:472px;
-              width: 622px;
-            }
-        }
-        .smallpix {
-          height: 40px;
+  background-color: rgba(0, 0, 0, 0.21);
+    .top_left {
+      margin-right: 15px;
+        .box2 {
+          height:530px;
           width: 625px;
-          background-color:green;
-            img {
-              height: 35px;
-              width: 35px;
+          border: 1px solid green;
+            .largerPix {
+              height:475px;
+              width:625px;
+              border: 1px solid yellow;
+              //background-color:red;
+                img {
+                  // @include sqrSize (600px);
+                  height:472px;
+                  width: 622px;
+                }
+            }
+            .smallpix {
+              height: 40px;
+              width: 625px;
+              background-color:green;
+                img {
+                  @include sqrSize (35px);
+                }
             }
         }
     }
-    .box3 {
-      height: 350px;
-      width: 450px;
-      border:1px solid black;
-      text-align: center;
-        h6 {
-          height: 30px;
-          background-color: turquoise;
-        }
-        p {
+    .top_right {
+      margin-left: 15px;
+        .box3 {
           height: 300px;
           width: 450px;
-          background-color: rgba(131, 255, 0, 0.31);;
+          border:1px solid black;
+          text-align: center;
+            h6 {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 30px;
+              font-size: 20px;
+              background-color: turquoise;
+
+            }
+            p {
+              height: 260px;
+              width: 450px;
+              font-size: 16px;
+              margin-top:10px;
+              padding: 15px;
+              background-color: rgba(131, 255, 0, 0.31);;
+            }
         }
-    }
-    .box4 {
-      width: 450px;
-      height: 50px;
-      border:1px solid lightgrey;
-        button.more {
-          border-radius: 50%;
+        .box4 {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 450px;
+          height: 50px;
+          border:1px solid lightgrey;
+            button {
+              border-radius: 4px;
+            }
+            /* brandico / Facebook */
+            .brandico-facebook:before {
+              font-family: 'brandico', sans-serif;
+            }
+            /* zocial/ Twitter */
+            .zocial-twitter:before {
+              font-family: 'zocial', sans-serif;
+            }
+            /* fontawesome / Pinterst */
+            .fontawesome-pinterest:before {
+              font-family: 'FontAwesome', sans-serif;
+            }
+            /* zocial/ Amazon */
+            .zocial-amazon:before {
+              font-family: 'zocial', sans-serif;
+            }
+            // li.zocial-twitter, li.fontawesome-pinterst, li.brandico-facebook, li.zocial-amazon {
+            //   @include sqrSize (100px)
+            // }
+
         }
     }
 }
@@ -137,8 +183,10 @@ header {
         display: flex;
         justify-content: space-around;
           img.compPix {
-            @include compSize (200px);
-            border:1px solid black;
+            @include sqrSize (200px);
+            border-radius: 16px;
+            background-color: rgba(255, 255, 255, 0.59)
+            // border:1px solid black;
           }
     }
 }
