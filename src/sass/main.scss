@@ -14,6 +14,8 @@ img {
   margin: 0;
   box-sizing:border-box;
   list-style: none;
+  text-decoration: none;
+  color: black;
 
 }
 body {
@@ -32,10 +34,16 @@ body {
 }
 
 header {
+  // display: flex;
+  // flex-direction: row;
+
   // border: 1px solid red;
-  background-color: rgba(8, 119, 17, 0.03);
+  // background-color: rgba(8, 119, 17, 0.03);
   height: 100px;
     .logo {
+      display: flex;
+      flex-direction: row;
+      align-items:center;
       color:cornflowerblue;
 
         img {
@@ -61,25 +69,26 @@ header {
           height:530px;
           width: 625px;
           border: 1px solid green;
-            .largerPix {
-              height:475px;
-              width:625px;
-              border: 1px solid yellow;
-              //background-color:red;
-                img {
-                  // @include sqrSize (600px);
-                  height:472px;
-                  width: 622px;
-                }
-            }
-            .smallpix {
-              height: 40px;
-              width: 625px;
-              background-color:green;
-                img {
-                  @include sqrSize (35px);
-                }
-            }
+            // .largerPix {
+            //   height:475px;
+            //   width:625px;
+            //   border: 1px solid yellow;
+            //   //background-color:red;
+            //     img {
+            //       // @include sqrSize (600px);
+            //       height:472px;
+            //       width: 622px;
+            //     }
+            // }
+
+            // .smallpix {
+            //   height: 40px;
+            //   width: 625px;
+            //   background-color:green;
+            //     img {
+            //       @include sqrSize (35px);
+            //     }
+            // }
         }
     }
     .top_right {
@@ -117,6 +126,11 @@ header {
             button {
               border-radius: 4px;
             }
+            .button {
+              height: 30px;
+              width: 100px;
+              font-size:15px;
+            }
             /* brandico / Facebook */
             .brandico-facebook:before {
               font-family: 'brandico', sans-serif;
@@ -133,15 +147,15 @@ header {
             .zocial-amazon:before {
               font-family: 'zocial', sans-serif;
             }
-            // li.zocial-twitter, li.fontawesome-pinterst, li.brandico-facebook, li.zocial-amazon {
-            //   @include sqrSize (100px)
-            // }
+            a.zocial-twitter, a.fontawesome-pinterest, a.brandico-facebook, a.zocial-amazon {
+              font-size: 30px;
+            }
 
         }
     }
 }
 .middle {
-  height:525px;
+  height:300px;
   background-color: rgba(211, 211, 211, 0.14);
     .box5 {
       // background-color: yellow;
@@ -177,7 +191,7 @@ header {
     }
 }
 .lower {
-  height: 635px;
+  height: 350px;
   background-color:rgba(253, 255, 182, 0.11);
     .box6 {
         display: flex;
@@ -198,4 +212,23 @@ footer {
   height: 250px;
   background-color:  rgba(1, 16, 211, 0.05);
   color: black;
+}
+
+#carousel{
+  height:475px;
+  width:625px;
+  overflow: hidden;
+}
+#carousel .miniCarousel {
+  display: block;
+  width: 6000px;
+  height: 475px;
+  margin: 0;
+  padding: 0;
+}
+#carousel .next {
+  float: left;
+  list-style-type: none;
+  width: 720px;
+  height: 475px;
 }
