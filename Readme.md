@@ -17,4 +17,5 @@ We were asked to replicate this image and make it functional :
 ![alt tag](https://tiy-learn-content.s3.amazonaws.com/5eba7d97-page-numbered.png)
  - - - -
 
-#### Here is a link to my [Surge.sh](tiy-maria-del-carmenchico-weekend_the_project.surge.sh)
+#### Here is a link to my [live](tiy-maria-del-carmenchico-weekend_the_project.surge.sh)
+tiy-maria-del-carmenchico-weekend_the_project.surge.sh --- try this..(not sure why above isn't working)
