@@ -22,7 +22,7 @@ function extractProductInfo(productData) {
       //I went head and added a variable name to the template, eventhough I would have simply done a return on it, but doing it this way, I added the append at the end of the function. Saved a step... but the otehr way will work as well.
       var infoHTML= `
               <div class="">
-                  <h6>${title}</h6>
+                  <h6 title="Lawn Darts will Change your life">${title}</h6>
                   <p>${desc}</p>
               </div>
               `;

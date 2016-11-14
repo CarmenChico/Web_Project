@@ -3,84 +3,93 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawn Darts</title>
+    <title >Lawn Darts</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <!-- <img src="images/cathedral.jpg" alt="" /> -->
     <div class="container">
-      <header>
-        <div class="logo">
-          <img src="images/cathedral.jpg" alt="" />
-          <span>Play Possom</span>
-        </div>
-      </header>
-      <section class="top">
-        <div class="top_left">
-          <div class="box2">
-            <div id="carousel">
-                <ul class="miniCarousel">
-                  <li class="next" ><img src="images/dart6.JPG" alt="" /></li>
-                  <li class="next" ><img src="images/dart1.JPG" alt="" /></li>
-                  <li class="next" ><img src="images/dart4.jpeg" alt="" /></li>
-                  <li class="next" ><img src="images/dart5.JPG" alt="" /></li>
-                  <li class="next" ><img src="images/dart9.JPG" alt="" /></li>
-                  <li class="next" ><img src="images/dart7.JPG" alt="" /></li>
-                  <li class="next" ><img src="images/dart6.JPG" alt="" /></li>
-                </ul>
-
+          <header>
+            <div class="logo">
+              <img src="images/Cupid.png" alt="" />
+              <span>Éros</span>
             </div>
-            <!-- <div class="largerPix">
-              <img src="images/dart6.JPG" alt="" />
+          </header>
+          <section class="top">
+            <div class="top_left">
+              <div class="box2">
+                <div id="slider">
+                  <li class="slide switch" id="slide5" ><img src="images/dart6.JPG" alt="" /></li>
+                    <ul class="slides">
+                      <span class="left arrow">&#171;</span>
+                      <!-- <li ><img src="images/dart6.JPG" alt="" /></li> -->
+                      <li class="slide switch" id="slide5" ><img src="images/dart6.JPG" alt="" /></li>
+                      <li class="slide switch" id="slide1"  ><img src="images/dart1.JPG" alt="" /></li>
+                      <li class="slide switch" id="slide2" ><img src="images/dart4.jpeg" alt="" /></li>
+                      <li class="slide switch" id="slide3" ><img src="images/dart5.JPG" alt="" /></li>
+                      <li class="slide switch" id="slide4" ><img src="images/dart9.JPG" alt="" /></li>
+                      <span class="right arrow">&#187;</span>
+                      <!-- <li class="slide" ><img src="images/dart9.JPG" alt="" /></li>
+                      <li class="slide" ><img src="images/dart7.JPG" alt="" /></li>
+                      <li class="slide" ><img src="images/dart6.JPG" alt="" /></li> -->
+                    </ul>
+                </div>
+                <!-- <div class="largerPix">
+                  <img src="images/dart6.JPG" alt="" />
+                </div> -->
+                <div class="smallpix">
+                  <img class="mini" id="miniImg1" src="images/dart1.JPG" alt="" />
+                  <img class="mini" id="miniImg2" src="images/dart4.jpeg" alt="" />
+                  <img class="mini" id="miniImg3" src="images/dart5.JPG" alt="" />
+                  <img class="mini" id="miniImg4" src="images/dart9.JPG" alt="" />
+                  <!-- <img  id="miniImg5" src="images/dart7.JPG" alt="" /> -->
+                </div>
+              </div>
             </div>
-            <div class="smallpix">
-              <img src="images/dart1.JPG" alt="" />
-              <img src="images/dart4.jpeg" alt="" />
-              <img src="images/dart5.JPG" alt="" />
-              <img src="images/dart9.JPG" alt="" />
-              <img src="images/dart7.JPG" alt="" />
-            </div> -->
-          </div>
-        </div>
-        <div class="top_right">
-          <div class="box3"></div>
-          <div class="box4">
-            <button class="button" type="button" name="button">Add to Cart</button>
-            <a class="zocial-twitter" href="#"></a>
-            <a class="brandico-facebook" href="#"></a>
-            <a class="fontawesome-pinterest" href="#"></a>
-            <a class="zocial-amazon" href="#"></a>
-          </div>
-        </div>
+            <div class="top_right">
+              <div class="box3"></div>
+              <div class="box4">
+                <!-- <a href="#" onclick='modal ()'>Add to Cart</a> -->
+                <button class="button" id="openModal" type="button" name="button">Add to Cart</button>
+                <div id="dModal" class="modal">
+                    <div class="modal-content">
+                      <!-- <a href="#" onclick='modal()'>close</a> -->
+                      <span class="close"> x </span>
+                      <p>
+                        Product Added Successfully!
+                      </p>
+                    </div>
+                </div>
+                <a class="zocial-twitter" href="https://twitter.com/?lang=en" title="Follow Us on Twitter"></a>
+                <a class="brandico-facebook" href="https://www.facebook.com/" title="Like Us on Facebook"></a>
+                <a class="fontawesome-pinterest" href="https://www.pinterest.com/" title="Check out our Pins on PINTEREST"></a>
+                <a class="zocial-amazon" href="https://www.amazon.com/" title="See how you can't beat our price with Amazon"></a>
 
+              </div>
+            </div>
+          </section>
+          <section class="middle">
+            <h1>Testimonials</h1>
+            <div class="box5">
+              <div class="feedback">
+                <div class="photo"></div>
+                <div class="testimonials"></div>
+              </div>
+            </div>
+          </section>
+          <section class="lower">
+            <h1>Companies Who Use Our Products</h1>
+            <div class="box6"></div>
+          </section>
 
-      </section>
-
-      <section class="middle">
-        <h1>Testimonials</h1>
-        <div class="box5">
-          <div class="feedback">
-            <div class="photo"></div>
-            <div class="testimonials"></div>
-          </div>
-
-        </div>
-      </section >
-
-      <section class="lower">
-        <h1>Companies Who Use Our Products</h1>
-        <div class="box6"></div>
-      </section>
       <section class="locator">
         <h1>Developed in the Best Country</h1>
         <div class="box7"></div>
       </section>
-
       <footer>
-        <span>HELLO FOOTER!</span>
+        <span></span>
       </footer>
-
     <script src="js/bundle.js"></script>
+   </div>
   </body>
 </html>
