@@ -3,7 +3,7 @@ import $ from "jquery";
 import { mapHTML } from "./map";
 import { extractProduct_Info, extractProductInfo } from "./product_info";
 import { testimonialInfo, requestTestimonials } from "./testimonials";
-import { getProfile, boyUserPic, girlUserPic } from "./user_profile";
+import { getProfileGirl, getProfileBoy, UserPic } from "./user_profile";
 import { companyPIX, getCompanyInfo } from "./companies";
 import { getImgs } from "./flickr";
 
@@ -29,9 +29,9 @@ extractProduct_Info.then(extractProductInfo);  //these hold the ajax request and
 requestTestimonials().then(testimonialInfo);
 
 //photos
-getProfile().then(girlUserPic);
-getProfile().then(girlUserPic);
-getProfile().then(boyUserPic);
+getProfileGirl().then(UserPic);
+getProfileGirl().then(UserPic);
+getProfileBoy().then(UserPic);
 
  /////////////////////////////////////
  //////////Companies///////////////

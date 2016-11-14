@@ -117,27 +117,6 @@ header {
               width: 100px;
               font-size:15px;
             }
-            /* brandico / Facebook */
-            .brandico-facebook:before {
-              font-family: 'brandico', sans-serif;
-            }
-            /* zocial/ Twitter */
-            .zocial-twitter:before {
-              font-family: 'zocial', sans-serif;
-            }
-            /* fontawesome / Pinterst */
-            .fontawesome-pinterest:before {
-              font-family: 'FontAwesome', sans-serif;
-            }
-            /* zocial/ Amazon */
-            .zocial-amazon:before {
-              font-family: 'zocial', sans-serif;
-              border-radius: 50%;
-            }
-            a.zocial-twitter, a.fontawesome-pinterest, a.brandico-facebook, a.zocial-amazon {
-              font-size: 25px;
-              color:black;
-            }
             .button:hover {
               height: 40px;
               width: 125px;
@@ -147,35 +126,84 @@ header {
               color: #fff;
 	             text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
             }
-            /* brandico / Facebook */
-            .brandico-facebook:hover {
-              color:#111cc8;
-              background-color: white;
-              width: 40px;
-              text-align: center;
-              border-radius: 15px;
+            .fa {
+              color: black;
+              font-size: 25px;
             }
-            /* zocial/ Twitter */
-            .zocial-twitter:hover {
+            // .fa-amazon, .fa-facebook-official, .fa-twitter-square, .fa-pinterest-square {
+            //   font-size: 25px;
+            //   color:black;
+            // }
+            .fa-facebook-official:hover {
+                color:#111cc8;
+
+            }
+            .fa-twitter-square:hover {
               color: #0eebf2;
             }
-            /* fontawesome / Pinterst */
-            .fontawesome-pinterest:hover {
-              color:red;
-              background-color:white;
-              width: 40px;
-              text-align: center;
-              border-radius: 50%;
+            .fa-pinterest-square:hover {
+                color:red;
             }
-            /* zocial/ Amazon */
-            .zocial-amazon:hover {
-              color:white;
+            .fa-amazon:hover {
+                color:white;
             }
-            .fontawesome-pinterest:hover, .zocial-amazon:hover, .zocial-twitter:hover, .brandico-facebook:hover {
+            .fa-amazon:hover, .fa-facebook-official:hover, .fa-twitter-square:hover, .fa-pinterest-square:hover {
                 transition-timing-function: ease-in-out;
                 transition-duration: 1s;
-                font-size: 37px;
+                font-size: 45px;
             }
+            //removed icons from WE LOVE ICONS website becuase it is not https. Surge would not let them come on on screen
+            // /* brandico / Facebook */
+            // .brandico-facebook:before {
+            //   font-family: 'brandico', sans-serif;
+            // }
+            // /* zocial/ Twitter */
+            // .zocial-twitter:before {
+            //   font-family: 'zocial', sans-serif;
+            // }
+            // /* fontawesome / Pinterst */
+            // .fontawesome-pinterest:before {
+            //   font-family: 'FontAwesome', sans-serif;
+            // }
+            /*  Amazon */
+            // .fa.fa-amazon {
+            //   font-size: 30px;
+            //   // border-radius: 50%;
+            // }
+            // a.zocial-twitter, a.fontawesome-pinterest, a.brandico-facebook, a.zocial-amazon {
+            //   font-size: 25px;
+            //   color:black;
+            // }
+
+            // /* brandico / Facebook */
+            // .brandico-facebook:hover {
+            //   color:#111cc8;
+            //   background-color: white;
+            //   width: 40px;
+            //   text-align: center;
+            //   border-radius: 15px;
+            // }
+            /* zocial/ Twitter */
+            // .zocial-twitter:hover {
+            //   color: #0eebf2;
+            // }
+            /* fontawesome / Pinterst */
+            // .fontawesome-pinterest:hover {
+            //   color:red;
+            //   background-color:white;
+            //   width: 40px;
+            //   text-align: center;
+            //   border-radius: 50%;
+            // }
+            /* zocial/ Amazon */
+            // .fa.fa-amazon:hover {
+            //   color:white;
+            // }
+            // .fa-amazon:hover, .zocial-amazon:hover, .zocial-twitter:hover, .brandico-facebook:hover {
+            //     transition-timing-function: ease-in-out;
+            //     transition-duration: 1s;
+            //     font-size: 37px;
+            // }
         }
     }
 }

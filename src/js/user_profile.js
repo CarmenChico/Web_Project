@@ -1,10 +1,15 @@
 import  $ from "jquery";
 
-var API = "https://randomuser.me/api/"
 
-function getProfile () {
+function getProfileBoy () {
   return $.ajax ({
-    url: `${API}`
+    url: `https://randomuser.me/api/?gender=male`
+  });
+};
+
+function getProfileGirl () {
+  return $.ajax ({
+    url: `https://randomuser.me/api/?gender=female`
   });
 };
 
@@ -12,34 +17,20 @@ function getProfile () {
 
 
 
-function girlUserPic (pic) {
+function UserPic (pic) {
   // console.log(pic);
     pic.results.map(function(data){
         // console.log(data);
-        if (data.gender==="female") {
           var pic= data.picture.large;
           // console.log(pic);
           var picHTML = `
             <img src="${pic}">
              `;
           $(".photo").append(picHTML);
-        }
+
     })
 }
 
-function boyUserPic (pic) {
-  // console.log(pic);
-    pic.results.map(function(data){
-        // console.log(data);
-        if (data.gender==="male") {
-          var pic= data.picture.large;
-          // console.log(pic);
-          var picHTML = `
-            <img src="${pic}">
-             `;
-          $(".photo").append(picHTML);
-        }
-    })
-}
 
-    export { getProfile, boyUserPic, girlUserPic };
+
+    export { getProfileGirl, getProfileBoy, UserPic };
