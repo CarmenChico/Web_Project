@@ -28,8 +28,7 @@ extractProduct_Info.then(extractProductInfo);  //these hold the ajax request and
 
 requestTestimonials().then(testimonialInfo);
 
-//photos
-getProfileGirl().then(UserPic);
+//photo
 getProfileGirl().then(UserPic);
 getProfileBoy().then(UserPic);
 
@@ -57,7 +56,7 @@ getProfileBoy().then(UserPic);
      $("#slide2").removeClass("switch");
      $("#slide3").addClass("switch");
      $("#slide4").addClass("switch");
-    $("#slide5").toggleClass("switch");
+     $("#slide5").toggleClass("switch");
    }
    if (event.target.id==="miniImg3") {
      console.log("Hey3");
@@ -65,7 +64,7 @@ getProfileBoy().then(UserPic);
      $("#slide2").addClass("switch");
      $("#slide3").removeClass("switch");
      $("#slide4").addClass("switch");
-    $("#slide5").toggleClass("switch");
+     $("#slide5").toggleClass("switch");
    }
    if (event.target.id==="miniImg4") {
      console.log("Hey4");
@@ -73,7 +72,7 @@ getProfileBoy().then(UserPic);
      $("#slide2").addClass("switch");
      $("#slide3").addClass("switch");
      $("#slide4").removeClass("switch");
-    $("#slide5").toggleClass("switch");
+     $("#slide5").toggleClass("switch");
    }
  }
  // Shows all div content

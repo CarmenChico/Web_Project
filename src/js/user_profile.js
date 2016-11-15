@@ -9,7 +9,7 @@ function getProfileBoy () {
 
 function getProfileGirl () {
   return $.ajax ({
-    url: `https://randomuser.me/api/?gender=female`
+    url: `https://randomuser.me/api/?results=2&gender=female`
   });
 };
 
